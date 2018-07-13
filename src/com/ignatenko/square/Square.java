@@ -7,12 +7,12 @@ import com.ignatenko.figures.AbstractShape;
 import com.ignatenko.figures.Shape;
 import com.ignatenko.main.RunApp;
 
-public class Square extends AbstractShape implements Shape{
-	
+public class Square extends AbstractShape implements Shape {
+
 	private static final Logger logger = Logger.getLogger(Square.class.getName());
-	
+
 	private int sideOfSquare;
-	
+
 	public int getSideOfSquare() {
 		return sideOfSquare;
 	}
@@ -28,9 +28,7 @@ public class Square extends AbstractShape implements Shape{
 	@Override
 	public double getArea() {
 		logger.log(Level.INFO, String.valueOf(sideOfSquare * sideOfSquare));
-		return sideOfSquare * sideOfSquare;	
+		return sideOfSquare * sideOfSquare;
 	}
 
-
-	
 }
