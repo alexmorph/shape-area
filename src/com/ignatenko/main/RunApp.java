@@ -3,7 +3,7 @@ package com.ignatenko.main;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.square.Square;
+import com.ignatenko.square.Square;
 
 public class RunApp {
 	private static final Logger logger = Logger.getLogger(RunApp.class.getName());
