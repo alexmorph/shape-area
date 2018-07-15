@@ -10,7 +10,6 @@ import com.ignatenko.main.RunApp;
 public class Square extends AbstractShape implements Shape {
 
 	private static final Logger logger = Logger.getLogger(Square.class.getName());
-
 	private int sideOfSquare;
 
 	public int getSideOfSquare() {
@@ -21,14 +20,20 @@ public class Square extends AbstractShape implements Shape {
 		this.sideOfSquare = sideOfSquare;
 	}
 
-	public Square(int side) {
-		this.sideOfSquare = side;
-	}
 
 	@Override
 	public double getArea() {
-		logger.log(Level.INFO, String.valueOf(sideOfSquare * sideOfSquare));
-		return sideOfSquare * sideOfSquare;
+		 int result = checkSideLength(getSideOfSquare());
+		return result * result;
+	}
+	
+	public int checkSideLength(int value) {
+		if(value > 0) {
+			return value;
+		}else {
+			logger.log(Level.WARNING, "Side of square can be only above zero!");	
+			return 0;
+		}
 	}
 
 }
