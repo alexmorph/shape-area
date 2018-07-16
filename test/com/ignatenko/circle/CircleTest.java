@@ -1,4 +1,4 @@
-package com.ignatenko.test;
+package com.ignatenko.circle;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,16 +11,16 @@ public class CircleTest {
 	public void circleZeroAreaTest() {
 		Circle circle = new Circle();
 		circle.setRadius(0);
-		double result = circle.getArea();
-		Assert.assertEquals((Double) 0.0, (Double) result);
+		int result = circle.getArea();
+		Assert.assertEquals( 0, result);
 	}
 	
 	@Test
 	public void circleValidAreaTest() {
 		Circle circle = new Circle();
 		circle.setRadius(5);
-		double result = circle.getArea();
-		Assert.assertEquals((Double)  78.53981633974483, (Double) result);
+		int result = circle.getArea();
+		Assert.assertEquals(78, result);
 	}
 
 }

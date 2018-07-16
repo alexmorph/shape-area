@@ -1,4 +1,4 @@
-package com.ignatenko.test;
+package com.ignatenko.square;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,16 +11,16 @@ public class SquareTest {
 	public void squareAreaTest() {
 		Square square = new Square();
 		square.setSideOfSquare(4);
-		double result = square.getArea();
-		Assert.assertEquals(Double.valueOf(16), (Double) result);
+		int result = square.getArea();
+		Assert.assertEquals(16, result);
 	}
 	
 	@Test
 	public void squareZeroAreaTest() {
 		Square square = new Square();
 		square.setSideOfSquare(0);
-		double result = square.getArea();
-		Assert.assertEquals(Double.valueOf(0), (Double) result);
+		int result = square.getArea();
+		Assert.assertEquals(0, result);
 	}
 
 }

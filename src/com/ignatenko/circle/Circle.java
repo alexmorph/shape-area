@@ -21,9 +21,9 @@ public class Circle extends AbstractShape implements Shape {
 	}
 
 	@Override
-	public double getArea() {
+	public int getArea() {
 		int myRadius = checkRadius(getRadius());
-		return Math.PI * Math.pow(myRadius, 2);
+		return (int) (Math.PI * Math.pow(myRadius, 2));
 	}
 	
 	public int checkRadius(int value) {

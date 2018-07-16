@@ -20,7 +20,7 @@ public class RunApp {
 		square.setSideOfSquare(0);
 		//logger.log(Level.INFO, String.valueOf(square.getArea()));
 
-		Triangle triangle = new Triangle(2, 0);
+		Triangle triangle = new Triangle(2, 4);
 		logger.log(Level.INFO, String.valueOf(triangle.getArea()));
 
 	}

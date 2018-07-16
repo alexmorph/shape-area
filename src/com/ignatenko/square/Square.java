@@ -22,7 +22,7 @@ public class Square extends AbstractShape implements Shape {
 
 
 	@Override
-	public double getArea() {
+	public int getArea() {
 		 int result = checkSideLength(getSideOfSquare());
 		return result * result;
 	}
