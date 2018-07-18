@@ -19,6 +19,10 @@ public class Circle extends AbstractShape implements Shape {
 	public void setRadius(int radius) {
 		this.radius = radius;
 	}
+	
+	public Circle(int radius) {
+		this.radius = radius;
+	}
 
 	@Override
 	public int getArea() {

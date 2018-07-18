@@ -12,6 +12,10 @@ public class Square extends AbstractShape implements Shape {
 	private static final Logger logger = Logger.getLogger(Square.class.getName());
 	private int sideOfSquare;
 
+	public Square(int sideLength) {
+		this.sideOfSquare = sideLength;
+	}
+
 	public int getSideOfSquare() {
 		return sideOfSquare;
 	}
