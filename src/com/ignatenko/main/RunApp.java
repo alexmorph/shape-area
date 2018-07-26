@@ -16,6 +16,7 @@ import com.ignatenko.circle.Circle;
 import com.ignatenko.figures.AbstractShape;
 import com.ignatenko.figures.Shape;
 import com.ignatenko.square.Square;
+import com.ignatenko.sum.Sum;
 import com.ignatenko.triangle.Triangle;
 
 public class RunApp {
@@ -53,7 +54,11 @@ for (int i = 0; i < figures.size(); i++) {
 		logger.log(Level.INFO, "Max area contain in class: " +maximalFigure.getClass().getSimpleName() + " area: " + maximalFigure.getArea());
 
 
-
+   Sum sum = new Sum();
+   int result = sum.findSumOfNumbers(sum.getValue());
+	logger.log(Level.INFO, "Class: " + sum.getClass().getName() + " sum of value numbers: " + result);	
+		//sum.findSumOfNumbersUsingString(sum.getValue());
+		
 	}
 
 }
