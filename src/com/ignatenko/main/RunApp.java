@@ -15,6 +15,7 @@ import com.ignatenko.FindValues.FindValue;
 import com.ignatenko.circle.Circle;
 import com.ignatenko.figures.AbstractShape;
 import com.ignatenko.figures.Shape;
+import com.ignatenko.palindrom.Palindrom;
 import com.ignatenko.square.Square;
 import com.ignatenko.sum.Sum;
 import com.ignatenko.triangle.Triangle;
@@ -58,6 +59,9 @@ for (int i = 0; i < figures.size(); i++) {
    int result = sum.findSumOfNumbers(sum.getValue());
 	logger.log(Level.INFO, "Class: " + sum.getClass().getName() + " sum of value numbers: " + result);	
 		//sum.findSumOfNumbersUsingString(sum.getValue());
+	
+	Palindrom palindrom = new Palindrom();
+	System.out.println(palindrom.findMaxPalindrom(1118, 2222) );
 		
 	}
 
